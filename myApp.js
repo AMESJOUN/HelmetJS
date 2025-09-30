@@ -95,8 +95,8 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       defaultSrc: ["'self'"], 
-      scriptSrc: ["'self'", "https://trusted.cdn.com"],
-    },
+      scriptSrc: ["'self'", "trusted.cdn.com"],
+    }
   })
 );
 
