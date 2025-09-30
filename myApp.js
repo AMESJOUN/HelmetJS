@@ -94,7 +94,7 @@ Hint: in the 'self' keyword, the single quotes are part of the keyword itself, s
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'self'"],  //Configure it by adding a directives object. In the object, set the defaultSrc to ["'self'"] (the list of allowed sources must be in an array), in order to trust only your website address by default. 
+      defaultSrc: ["'self'"], 
       scriptSrc: ["'self'", "https://trusted.cdn.com"],
     },
   })
